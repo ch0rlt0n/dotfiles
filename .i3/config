@@ -56,7 +56,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
+bindsym $mod+F2 exec qutebrowser
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
@@ -280,8 +280,8 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
-# exec --no-startup-id start_conky_green
+#exec --no-startup-id start_conky_maia
+exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -390,7 +390,9 @@ set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
-exec_always --no-startup-id feh --bg-scale /home/gordon/Pictures/tokyo_street_sunset_by_arsenicx-db9abol.jpg
+# Background is loaded by nitrogen later, along with starting compton
+#exec_always --no-startup-id feh --bg-scale /home/gordon/Pictures/tokyo_street_sunset_by_arsenicx-db9abol.jpg
+#exec_always --no-startup-id feh --bg-scale /home/gordon/Pictures/forth_rail_bridge_bw.jpg
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
