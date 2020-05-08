@@ -1,0 +1,7 @@
+[Unit]
+Description=Run pywal in the morning (or when logging in if last timer fired).
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/gordon/bin/pywal_morning.sh
+
