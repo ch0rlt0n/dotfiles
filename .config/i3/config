@@ -272,7 +272,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id compton -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -424,7 +424,8 @@ mode "$mode_gaps_outer" {
 # Added by GWL
 
 # Background is loaded by nitrogen later, along with starting compton
-exec_always --no-startup-id feh --bg-scale /home/gordon/Pictures/Tokyo_Street/current.jpg
+#exec_always --no-startup-id feh --bg-scale /home/gordon/Pictures/Tokyo_Street/current.jpg
+exec_always --no-startup-id ~/.fehbg
 
 # Stop Pale Moon's Unable to Update window from tiling
 for_window [class="Pale moon" instance="Update"] floating enable
