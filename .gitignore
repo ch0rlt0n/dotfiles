@@ -1,6 +1,8 @@
 /.cache/
 /.cfg/
 /.cfgfresh/
+/.config/Code - OSS/
+/.config/GIMP/
 /.config/VirtualBox/
 /.config/mpd/playlists/
 /.config/opera/
@@ -15,6 +17,7 @@
 /.themes/
 /.thumbnails/
 /.vim/
+/.vscode-oss/
 /dev/
 /.Xauthority
 /.bash_history

@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/mailto=opera.desktop
+x-scheme-handler/webcal=opera.desktop

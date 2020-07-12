@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# 20200616 GWL Start
+# Following instructions from https://wiki.archlinux.org/index.php/NVIDIA_Optimus
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+# 20200616 GWL End
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
